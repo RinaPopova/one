@@ -25,7 +25,7 @@ class HabrNewsSpider(scrapy.Spider):
         for news in response.css('article.post_preview'):
             link = news.css('a.post__title_link::attr(href)')[0].root.strip()
             hubs = []
-            for hub in response.css('ul.post__hubs inline-list').css('a::text'):
+            for hub in news.css('ul.inline-list').css('a::text'):
                 hubs.append(hub.root.strip())
             yield Request(link, callback=self.parse_item_news,
                           cb_kwargs=dict(hubs=hubs))
@@ -38,24 +38,27 @@ class HabrNewsSpider(scrapy.Spider):
     def parse_item_news(self, response, hubs):
         author = response.css('span.user-info__nickname::text')[0].root.strip()
         author_karma = response.css('div.stacked-counter__value::text')[0].root.strip()
-        author_rating = response.css('div.stacked-counter_rating::text')[0].root.strip()
+        author_rating = response.css('a.stacked-counter_rating::text')[0].root.strip()
         author_specialization = response.css('div.user-info__specialization::text')[0].root.strip()
-        comments_counter = response.css('span.post-stats__comments-count::text')[0].root.strip()
-        news_id = response.css('article.post_full::text')[0].root.strip()
+        comments_counter = response.css('a.post-stats__comments-count::text')
+        news_id = response.css('article.post::text')[0].root.strip()
         tags = []
-        for tag in response.css('ul.inline-list inline-list_fav-tags js-post-tags').css('a::text'):
+        for tag in response.css('ul.js-post-tags').css('a::text'):
             tags.append(tag.root.strip())
         text = response.css('div.post__body_full::text')[0].root.strip()
         title = response.css('span.post__title-text::text')[0].root.strip()
 
         item = HabrNews()
         item['author'] = author
-        item['author_karma'] = author_karma
-        item['author_rating'] = author_rating
+        if author_karma:
+            item['author_karma'] = float(str(author_karma).replace(',', '.').replace('–', ''))
+        if author_rating:
+            item['author_rating'] = float(str(author_rating).replace(',', '.').replace('–', ''))
         item['author_specialization'] = author_specialization
-        item['comments_counter'] = int(comments_counter.replace(',', '').replace('\xa0', ''))
+        if comments_counter:
+            item['comments_counter'] = comments_counter
         item['hubs'] = hubs
-        item['news_id'] = news_id
+        item['news_id'] = news_id.replace('post_', '')
         item['tags'] = tags
         item['text'] = text
         item['title'] = title

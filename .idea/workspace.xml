@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="60a27867-d342-4a05-b1b4-a5f6f0eeba21" name="Default Changelist" comment="hw">
       <change beforePath="$PROJECT_DIR$/.idea/one.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/one.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/4_MySQL-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/4_MySQL-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4_MySQL.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/4_MySQL.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/5_web_scraping.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/5_web_scraping.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/harb_news/habr_news.csv" beforeDir="false" afterPath="$PROJECT_DIR$/harb_news/habr_news.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/harb_news/habr_news.json" beforeDir="false" afterPath="$PROJECT_DIR$/harb_news/habr_news.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/harb_news/harb_news/spiders/harb_news.py" beforeDir="false" afterPath="$PROJECT_DIR$/harb_news/harb_news/spiders/harb_news.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614101643853</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="hw">
+      <created>1615312512196</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615312512196</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
