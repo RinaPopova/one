@@ -7,9 +7,6 @@
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/4_MySQL-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/4_MySQL-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4_MySQL.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/4_MySQL.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/5_web_scraping.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/5_web_scraping.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/harb_news/habr_news.csv" beforeDir="false" afterPath="$PROJECT_DIR$/harb_news/habr_news.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/harb_news/habr_news.json" beforeDir="false" afterPath="$PROJECT_DIR$/harb_news/habr_news.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/harb_news/harb_news/spiders/harb_news.py" beforeDir="false" afterPath="$PROJECT_DIR$/harb_news/harb_news/spiders/harb_news.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +41,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Anaconda3/envs/levelup" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
@@ -52,6 +49,9 @@
       <module name="one" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/harb_news/harb_news/spiders" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -117,7 +117,28 @@
       <option name="project" value="LOCAL" />
       <updated>1615312512196</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="hw">
+      <created>1615323427402</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1615323427402</updated>
+    </task>
+    <task id="LOCAL-00007" summary="hw">
+      <created>1615723589624</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615723589624</updated>
+    </task>
+    <task id="LOCAL-00008" summary="hw">
+      <created>1615728840896</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1615728840896</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
